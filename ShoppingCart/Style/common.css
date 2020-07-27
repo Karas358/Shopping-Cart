@@ -1,0 +1,183 @@
+﻿
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway';
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+    .column a {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+.dropdown-item:hover {
+    color: steelblue;
+}
+
+.carousel-inner {
+    max-height: 550px !important;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.card-img-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: center;
+    overflow: hidden;
+    position: relative;
+    /*background-color: #262626;
+      background-image:url('Media/kiddies.jpg');*/
+    background: url("https://images.unsplash.com/photo-1441205188609-b875e92a9807?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80");
+}
+
+
+
+
+.card {
+    margin: 0.5%;
+}
+
+    .card:hover {
+        /*border: 0.5px solid dimgray;*/
+        box-shadow: rgba(103, 92, 92, 0.15) 3px 3px;
+    }
+
+.nav-link {
+    color: dimgray;
+}
+
+    .nav-link:hover {
+        color: orange;
+    }
+
+.nav-item {
+    color: dimgray;
+}
+
+    .nav-item:hover {
+        color: orange;
+    }
+
+.all-btn {
+    border: 0.5px solid lightgray;
+    background-color: transparent;
+    color: gray;
+}
+
+    .all-btn:hover {
+        border: 0.5px solid steelblue;
+        background-color: transparent;
+        color: steelblue;
+    }
+
+    .all-btn:active {
+        border: 0.5px solid steelblue;
+        background-color: transparent;
+        color: steelblue;
+    }
+
+
+
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 767px) {
+}
+
+
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 767px) {
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 768px) {
+}
+
+@media only screen and (max-width: 1920px) {
+}
+
+.btn .tooltiptext {
+    font-size: xx-small;
+    visibility: hidden;
+    width: 25%;
+    background-color: lightgray;
+    color: dimgrey;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    right: 55%;
+}
+
+.btn:hover .tooltiptext {
+    visibility: visible;
+}
